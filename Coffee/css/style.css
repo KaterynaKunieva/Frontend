@@ -1,0 +1,77 @@
+body{
+    font-family: 'Alegreya', serif;
+    background-color: rgb(240, 216, 192);
+}
+select{
+    font-family: 'Alegreya', serif;
+    margin: 0.5%;
+}
+input{
+    font-family: 'Alegreya', serif;
+    margin: 0.5%;
+}
+textarea{
+    font-family: 'Alegreya', serif;
+    margin: 0.5%;
+}
+.coffee{
+    border: none;
+    margin: 2%;
+    padding: 1%
+}
+.delivery{
+    border: none;
+    margin: 2%;
+    padding: 1%; 
+}
+legend{
+    color: #a1773f;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+}
+fieldset{
+    text-align: center;
+}
+h1{
+    font-family: 'Rampart One', cursive;
+    font-size: 50px;
+}
+h2{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+header{
+    text-align: center;
+    background-color: #C5A77F;
+}
+button{
+    border-radius: 6%;
+    border-style: dashed;
+    border-color: black;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: black;
+    background-color: #C5A77F;
+    font-size: xx-large;
+}
+.divc{
+    text-align: center;
+    padding: 3%;
+    background-color: #C5A77F;
+}
+button:hover{
+    background-color: grey;
+}
+button:active{
+    border-bottom: 1px solid;
+    background: black;
+}
+table{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: large;
+    text-align: center;
+    border-style: initial;
+    margin: 5px auto;
+}  
+td{
+    padding: 10px;
+}

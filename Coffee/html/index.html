@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Starbuzz Cava Machine</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,500&family=Open+Sans+Condensed:wght@300&family=Rampart+One&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="../javascript/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Starbuzz Cava Machine</h1>
+            <h2>Заповніть наступну форму і натисніть кнопку «Замовити», щоб оформити замовлення</h2>
+        </header>
+        <form name = "MyForm" id="MyForm">
+            <fieldset class="coffee" name="coffee" id="coffee">
+                Виберіть каву: 
+                    <select name="Виберіть каву[]">
+                        <option value = "Домашня суміш">Домашня суміш</option>
+                        <option value = "Гватемала">Гватемала</option>
+                        <option value = "Кенія">Кенія</option>
+                        <option value = "Болівія">Болівія</option>
+                    </select><br>
+                Тип: 
+                    <input type="radio" id = "Зерна" name="Тип" value="Кава в зернах"> 
+                    <label for="Зерна">Кава в зернах</label> 
+                    <input type="radio" id = "Мелена" name="Тип" value="Мелена кава"> 
+                    <label for="Мелена">Мелена кава</label> 
+                    <br>
+                Кількість кави (чашки): 
+                    <input type="number" name="Кількість" id = "Кількість" required> <br>
+                Доставити до: 
+                    <input type="time" name="Доставити до"><br>
+                Додаткові послуги: 
+                    <select name="Додаткові послуги" multiple size=2>
+                        <option>Подарункова упаковка</option>
+                        <option>Каталог продукції</option>
+                    </select>
+            </fieldset>
+            <fieldset class="delivery" name="delivery" id="delivery">
+                <legend>Доставка продукції: </legend>
+                ПІБ: <input type="text" name="ПІБ" id="ПІБ" required>
+                Адреса: <input type="text" name="Адреса" id="Адреса" required> <br>
+                Телефон: <input type="tel" name="Телефон" id="Телефон" value="+380">
+                E-mail: <input type="email" name="Email" id="Email"> <br>
+                Коментар: <br> <textarea name = "Коментар" id = "Коментар" cols="60" rows="7" placeholder="Додайте коментар..."></textarea>
+            </fieldset>
+            <div class = "divc">
+                <button type="button" name = "submit" id = "submit" onclick="newtable()">Замовити</button>
+            </div>
+        </form>
+        <table name = "mytable" id = "mytable" border = "1px"> 
+            <tr>
+                <td>ПІБ</td>
+                <td>Адреса</td>
+                <td>Телефон</td>
+                <td>E-mail</td>
+                <td>Тип кави</td>
+                <td>Кількість</td>
+            </tr>
+        </table>
+    </body>
+</html>
