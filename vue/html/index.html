@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel = "stylesheet" href = "../css/style.css">
+    </head>
+    <body>
+        <div id = "app">
+            <h5> Зробила {{author}}, група {{group}} </h5>
+            <div class = "region" v-bind:class = "[color, {bounded: isBounded}, size]"></div> 
+            <br>  
+            <input type="text" v-model="color" size="10px">
+            <br>
+            <input v-model="size" type="text" size="10px"> 
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+        <script src = "../javascript/script.js"></script>
+    </body>
+</html>
